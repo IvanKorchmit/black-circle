@@ -1,0 +1,183 @@
+:root { 
+    --main-color: black;
+    --secondary-color: white;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: font;
+    text-shadow: 2px 2px var(--main-color);
+    
+}
+@font-face {
+    font-family: font;
+    src: url("../fonts/OldLondon.ttf");
+}
+h1 {
+    font-size: 32pt;
+    color: var(--secondary-color);
+}
+p {
+    font-size: 24pt;
+    color: var(--secondary-color);
+
+}
+
+.background {
+    background-image: url("../img/background.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+}
+
+.menu {
+    position: fixed;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    z-index: 10;
+    animation-fill-mode: forwards;
+}
+.main {
+    animation-fill-mode:forwards;
+    padding: 3rem;
+    
+}
+.menu > * > *:not(.menu-button):not(.bands):hover {
+    animation-name: hover-color;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+.menu > * > *:not(.menu-button):not(.bands):not(:hover) {
+    animation-name: unhover-color;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+.menu > * > *{
+    width: 100px;
+    height: 60px;
+    padding: inherit;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.burzum {
+    background-image: url("../img/burzum.png");
+    filter: invert(0);
+}
+
+.mayhem {
+    background-image: url("../img/mayhem.png");
+}
+.darkthrone {
+    background-image: url("../img/darkthrone.png");
+}
+.dissection {
+    background-image: url("../img/dissection.png");
+}
+.summoning {
+    background-image: url("../img/summoning.png");
+}
+li {
+    display: block;
+    color: var(--secondary-color);
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+.menu-button {
+    position: relative;;
+    width: 300%;
+    text-align: right;
+    animation-fill-mode: forwards;
+    font-size: 24pt;
+    height: auto;
+    padding: inherit;
+}
+.bands {
+    position: relative;
+    font-size: 24pt;
+    height: auto;
+}
+.menu > ul > li {
+    background-color: var(--main-color);
+    padding: 0;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+  }
+
+@keyframes openNav {
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+@keyframes closeNav {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: -10%;
+    }
+}
+
+@keyframes moveMarginRight {
+    0% {
+        margin-left: 100px;
+    }
+    100% {
+        margin-left: 10px;
+    }
+}
+@keyframes moveMarginLeft {
+    0% {
+        margin-left: 10px;
+    }
+    100% {
+        margin-left: 100px;
+    }
+}
+
+@keyframes hover-color {
+    0% {
+        filter: invert(0);
+    }
+    100% {
+        filter: invert(1);
+    }
+}
+
+@keyframes unhover-color {
+    0% {
+        filter: invert(1);
+    }
+    100% {
+        filter: invert(0);
+    }
+}
+.home {
+    height: auto;
+    font-size: 24pt;
+    text-align: center;
+}
+.menu > ul > li > a{
+    height: inherit;
+    width: inherit;
+    text-decoration: none;
+    color:var(--secondary-color);
+}

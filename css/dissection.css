@@ -1,0 +1,29 @@
+
+.jon {
+    filter: drop-shadow(0 0 16px black);
+    max-width: 1024px;
+    float:left ;
+}
+.live {
+    filter: drop-shadow(0 0 16px black);
+    max-width: 256px;
+    float:right ;
+}
+
+.sotlb {
+    filter: drop-shadow(0 0 16px black);
+    max-width: 512px;
+    float:left ;
+}
+
+.somberlain {
+    filter: drop-shadow(0 0 16px black);
+    max-width: 1024px;
+    float:right ;
+}
+
+.band {
+    filter: drop-shadow(0 0 16px black);
+    max-width: 1024px;
+    float:right ;
+}
