@@ -21,3 +21,8 @@
     max-width: 1024px;
     float:right ;
 }
+.band {
+    filter: drop-shadow(0 0 16px black);
+    max-width: 1024px;
+    float:right ;
+}

@@ -40,7 +40,17 @@ p {
     background-repeat: no-repeat;
     filter: blur(4px);
 }
-
+.home {
+    height: auto;
+    font-size: 24pt;
+    text-align: center;
+}
+.menu > ul > li > a{
+    height: inherit;
+    width: inherit;
+    text-decoration: none;
+    color:var(--secondary-color);
+}
 .menu {
     position: fixed;
     width: auto;
@@ -170,14 +180,101 @@ li {
         filter: invert(0);
     }
 }
-.home {
-    height: auto;
-    font-size: 24pt;
-    text-align: center;
+
+
+@media (max-width: 768px) {
+    .menu > ul > li {
+        float:left;
+    }
+    @keyframes openNav {
+        0% {
+            left: 0%;
+        }
+        100% {
+            left: 0%;
+        }
+    }
+    @keyframes closeNav {
+        0% {
+            left: 0%;
+        }
+        100% {
+            left: 0%;
+        }
+    }
+    .menu {
+        width: 768px;
+        background-color: var(--main-color);
+        align-content: center;
+        justify-content: center;
+        float: none;
+    }
+    @keyframes moveMarginRight {
+        0% {
+            margin-left: 10px;
+        }
+        100% {
+            margin-left: 10px;
+        }
+    }
+    @keyframes moveMarginLeft {
+        0% {
+            margin-left: 10px;
+        }
+        100% {
+            margin-left: 10px;
+        }
+    }
 }
-.menu > ul > li > a{
-    height: inherit;
-    width: inherit;
-    text-decoration: none;
-    color:var(--secondary-color);
+@media (max-width: 550px) {
+    .menu > ul > li {
+        float:left;
+    }
+    .menu > * > * {
+        width: 85px;
+        height: 60px;
+        padding: inherit;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    @keyframes openNav {
+        0% {
+            left: 0%;
+        }
+        100% {
+            left: 0%;
+        }
+    }
+    @keyframes closeNav {
+        0% {
+            left: 0%;
+        }
+        100% {
+            left: 0%;
+        }
+    }
+    .menu {
+        width: 768px;
+        background-color: var(--main-color);
+        align-content: center;
+        justify-content: center;
+        float: none;
+    }
+    @keyframes moveMarginRight {
+        0% {
+            margin-left: 10px;
+        }
+        100% {
+            margin-left: 10px;
+        }
+    }
+    @keyframes moveMarginLeft {
+        0% {
+            margin-left: 10px;
+        }
+        100% {
+            margin-left: 10px;
+        }
+    }
 }
