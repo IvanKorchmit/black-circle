@@ -85,8 +85,18 @@ function adaptMenu() {
         if(document.querySelector(".menu-button") != undefined) {
             document.querySelector(".menu-button").remove();
             document.querySelector(".bands").remove();
+
+
             menu_body.style.width = screen.width+"px";
-            console.log(menu_body.style.width);
+            let menuWidth = screen.width / document.querySelectorAll(".menu > ul > li").length-1;
+            document.querySelectorAll(".menu > ul > li").forEach(element => {
+                element.style.width = `${menuWidth}px`;
+            });
+
+
+
+            console.log(menu_body.style.width = screen.width+"px");
+            console.log(document.querySelector(".menu > ul > li").style.width);
         }
     } else {
         document.querySelector(".menu").innerHTML = menu_reserve;
