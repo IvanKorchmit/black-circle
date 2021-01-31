@@ -47,8 +47,9 @@ p {
     vertical-align: center;
 }
 .menu > ul > li > a{
-    height: inherit;
-    width: inherit;
+    width: 100px;
+    height: 60px;
+    text-align: center;
     text-decoration: none;
     color:var(--secondary-color);
 }
@@ -64,19 +65,18 @@ p {
     padding: 3rem;
     
 }
-.menu > * > *:not(.menu-button):not(.bands):hover {
+.menu > ul > li:not(.menu-button):not(.bands):hover {
     animation-name: hover-color;
     animation-duration: 0.25s;
     animation-fill-mode: forwards;
 }
-.menu > * > *:not(.menu-button):not(.bands):not(:hover) {
+.menu > ul > li:not(.menu-button):not(.bands):not(:hover) {
     animation-name: unhover-color;
     animation-duration: 0.25s;
     animation-fill-mode: forwards;
 }
 .menu > * > *{
     height: 60px;
-    padding: inherit;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -122,7 +122,6 @@ li {
 }
 .menu > ul > li {
     background-color: var(--main-color);
-    padding: 0;
     align-content: center;
     justify-content: center;
     display: flex;
@@ -130,7 +129,7 @@ li {
 
 @keyframes openNav {
     0% {
-        left: -10%;
+        left: -10.5%;
     }
     100% {
         left: 0%;
@@ -141,7 +140,7 @@ li {
         left: 0%;
     }
     100% {
-        left: -10%;
+        left: -10.5%;
     }
 }
 
