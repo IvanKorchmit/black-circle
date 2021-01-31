@@ -183,6 +183,15 @@ li {
 
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 16pt;
+        color: var(--secondary-color);
+    }
+    p {
+        font-size: 12pt;
+        color: var(--secondary-color);
+    
+    }
     .menu > ul > li {
         float:left;
     }
@@ -227,16 +236,35 @@ li {
     }
 }
 @media (max-width: 550px) {
+    .main {
+        padding: 60px;
+        margin: 0;
+    }
     .menu > ul > li {
         float:left;
     }
+    h1 {
+        font-size: 16pt;
+        color: var(--secondary-color);
+    }
+    p {
+        font-size: 12pt;
+        color: var(--secondary-color);
+    
+    }
     .menu > * > * {
-        width: 85px;
+        width: 64px;
         height: 60px;
         padding: inherit;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+    }
+    .menu {
+        left: 0;
+        top: 0;
+        width: 100%;
+        position:fixed;
     }
     @keyframes openNav {
         0% {

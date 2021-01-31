@@ -27,3 +27,37 @@
     max-width: 1024px;
     float:left ;
 }
+
+@media (max-width: 550px) {
+    .dissection-logo {
+        max-width: 256px;
+    }
+    .jon {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 256px;
+        float:left ;
+    }
+    .live {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 256px;
+        float:right ;
+    }
+    
+    .sotlb {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 512px;
+        float:left ;
+    }
+    
+    .somberlain {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 128px;
+        float:left ;
+    }
+    
+    .band {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 250px;
+        float:left ;
+    }
+}

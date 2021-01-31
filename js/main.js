@@ -76,12 +76,17 @@ addEventListener("resize", (e) => {
 
 });
 adaptMenu();
+addEventListener("load",(e)=>{
+    adaptMenu();
+});
 function adaptMenu() {
-    console.log(`Loaded  with ${window.innerWidth} pixels (width)`)
-    if (window.innerWidth <= 768) {
+    console.log(`Loaded  with ${screen.width} pixels (width)`)
+    if (screen.width <= 768) { //tablet
         if(document.querySelector(".menu-button") != undefined) {
             document.querySelector(".menu-button").remove();
             document.querySelector(".bands").remove();
+            menu_body.style.width = screen.width+"px";
+            console.log(menu_body.style.width);
         }
     } else {
         document.querySelector(".menu").innerHTML = menu_reserve;

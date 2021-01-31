@@ -26,3 +26,33 @@
     max-width: 1024px;
     float:right ;
 }
+@media (max-width: 550px) {
+    .mayhem-logo {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 256px;
+        float: left ;
+    }
+    
+    .dead {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 128px;
+        float:right ;
+    }
+    
+    .varg {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 128px;
+        float:left ;
+    }
+    
+    .album {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 256px;
+        float:right ;
+    }
+    .band {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 256px;
+        float:right ;
+    }
+}

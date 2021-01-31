@@ -19,3 +19,27 @@
     filter: drop-shadow(0 0 16px black);
     float: left ;
 }
+
+@media (max-width:550px) {
+    .burzum-logo {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 128px;
+        float: left ;
+    }
+    
+    .young-vikernes {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 128px;
+        float:right ;
+    }
+    
+    .smile {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 128px;
+        float:right ;
+    }
+    .filosofem {
+        filter: drop-shadow(0 0 16px black);
+        float: left ;
+    }
+}

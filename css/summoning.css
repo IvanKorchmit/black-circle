@@ -20,3 +20,29 @@
     max-width: 1024px;
     float:left ;
 }
+
+@media (max-width:550px) {
+    .summoning-logo {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 256px;
+    }
+    
+    .lugburz {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 256px;
+        float:left ;
+    }
+    
+    .sword {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 256px;
+        float:right ;
+    }
+    
+    .summoning {
+        filter: drop-shadow(0 0 16px black);
+        max-width: 1024px;
+        float:left ;
+    }
+    
+}
