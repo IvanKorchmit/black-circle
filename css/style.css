@@ -129,7 +129,7 @@ li {
 
 @keyframes openNav {
     0% {
-        left: -10.5%;
+        left: -10.5vw;
     }
     100% {
         left: 0%;
@@ -140,7 +140,7 @@ li {
         left: 0%;
     }
     100% {
-        left: -10.5%;
+        left: -10.5vw;
     }
 }
 
@@ -208,18 +208,18 @@ li {
     }
     @keyframes openNav {
         0% {
-            left: 0%;
+            left: 0vw;
         }
         100% {
-            left: 0%;
+            left: 0vw;
         }
     }
     @keyframes closeNav {
         0% {
-            left: 0%;
+            left: 0vw;
         }
         100% {
-            left: 0%;
+            left: 0vw;
         }
     }
     .menu {
